@@ -58,8 +58,11 @@ class Settings(BaseSettings):
         description="Anthropic API key. Required for live extraction; may be unset for dry-run / delivery.",
     )
     anthropic_model: str = Field(
-        default="claude-3-5-sonnet-latest",
-        description="Claude model ID used for extraction.",
+        default="claude-sonnet-4-6",
+        description=(
+            "Claude model ID used for extraction. "
+            "See https://docs.anthropic.com/en/docs/about-claude/models"
+        ),
     )
     anthropic_max_tokens: int = Field(
         default=4096,

@@ -260,7 +260,7 @@ All settings are env vars; see `.env.example`. The most useful knobs:
 | Var | Default | Purpose |
 | --- | --- | --- |
 | `ANTHROPIC_API_KEY` | _required_ | Claude API auth. |
-| `ANTHROPIC_MODEL` | `claude-3-5-sonnet-latest` | Override to pin a snapshot, e.g. `claude-3-5-sonnet-20241022`. |
+| `ANTHROPIC_MODEL` | `claude-sonnet-4-6` | See [Anthropic models](https://docs.anthropic.com/en/docs/about-claude/models). Avoid retired IDs like `claude-3-5-sonnet-20241022`. |
 | `MONGODB_URI` | `mongodb://localhost:27017` | Full connection string. |
 | `SCRAPER_HEADLESS` | `true` | Set `false` to watch the browser drive. |
 | `SCRAPER_MAX_HTML_CHARS` | `120000` | Hard cap on chars sent to Claude. |
