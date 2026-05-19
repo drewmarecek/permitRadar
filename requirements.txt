@@ -1,0 +1,22 @@
+# --- Core (explicitly requested) ---
+playwright>=1.45.0,<2.0.0
+anthropic>=0.39.0,<1.0.0
+pymongo>=4.7.0,<5.0.0
+pydantic>=2.7.0,<3.0.0
+python-dotenv>=1.0.1,<2.0.0
+
+# --- Async + config ---
+# motor is the official async MongoDB driver; built on pymongo. Required
+# because the rest of the pipeline (Playwright, Anthropic) is async.
+motor>=3.5.0,<4.0.0
+# pydantic-settings is the v2 successor to BaseSettings; gives us typed,
+# validated environment-variable loading with .env fallback.
+pydantic-settings>=2.3.0,<3.0.0
+
+# --- HTML + PDF processing ---
+beautifulsoup4>=4.12.0,<5.0.0
+lxml>=5.2.0,<6.0.0          # fast parser backend for BeautifulSoup
+pypdf>=4.3.0,<6.0.0         # pure-Python PDF text extraction
+
+# --- Reliability ---
+tenacity>=8.3.0,<10.0.0     # exponential backoff for Playwright + Anthropic
