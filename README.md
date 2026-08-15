@@ -1,4 +1,4 @@
-# GovRadar-Pipeline
+# GovRadar
 
 Autonomous scraping + LLM extraction pipeline for U.S. municipal
 government websites and PDFs. Targets RFPs, IFBs, building permits,
